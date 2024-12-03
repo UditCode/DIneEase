@@ -1,2 +1,2 @@
-# DIneEase
+# DineEase
 Online Food Ordering Website

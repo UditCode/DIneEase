@@ -50,33 +50,3 @@ export default function HomePage() {
     </>
   )
 }
-
-/*
-
-export default function HomePage() {
-  const [state, dispatch] = useReducer(reducer, initialState);
-  
-  const { foods, tags } = state;
-  const { searchTerm, tag } = useParams();
-
-  useEffect(() => {
-    
-
-    const loadFoods = tag
-      ? getAllByTag(tag)
-      : searchTerm
-      ? search(searchTerm)
-      : getAll();
-
-    loadFoods.then(foods => dispatch({ type: 'FOODS_LOADED', payload: foods }));
-  
-  }, [searchTerm, tag]);
-
-  return (
-    <>
-      <Search />
-      <Tags tags={tags} />
-      <Thumbnails foods={foods} />
-    </>
-  )
-}*/
